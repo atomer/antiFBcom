@@ -4,7 +4,7 @@
 // @namespace   http://www.atomer.sakura.ne.jp
 // @description 特定ユーザーのfacebookコメントを非表示にする
 // @include     https://www.facebook.com/plugins/comments.php*
-// @version     0.1
+// @version     0.1.1
 // ==/UserScript==
 ###
 
@@ -86,7 +86,7 @@
 	, false
 
 	# 初期アイテム
-	items = list.querySelectorAll(".uiListItem") or []
+	items = list.querySelectorAll(".fbFeedbackPost") or []
 	createAntiUserButton(item) for item in items
 
 	# 追加アイテム
